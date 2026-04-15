@@ -2,8 +2,6 @@ FROM node:18
 
 RUN apt-get update && apt-get install -y ffmpeg
 
-RUN npm install --legacy-peer-deps
-
 WORKDIR /app
 COPY . .
 
